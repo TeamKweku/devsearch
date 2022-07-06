@@ -8,6 +8,7 @@ class ProjectForm(ModelForm):
         fields = [
             'title',
             'description',
+            'featured_image',
             'demo_link',
             'source_link',
             'tags',
