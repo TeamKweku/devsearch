@@ -1,4 +1,5 @@
 from django.forms import ModelForm
+from django import forms
 from .models import Project
 
 
@@ -13,3 +14,7 @@ class ProjectForm(ModelForm):
             'source_link',
             'tags',
         ]
+
+        widgets = {
+            'tags': forms.CheckboxSelectMultiple(),
+        }
